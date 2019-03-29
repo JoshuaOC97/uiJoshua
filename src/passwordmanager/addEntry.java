@@ -165,7 +165,13 @@ public class addEntry extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNameOfAccountActionPerformed
 
     private void butAddPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butAddPasswordActionPerformed
-        // TODO add your handling code here:
+        System.out.println(txtNameOfAccount.getText());
+        System.out.println(txtUsername.getText());
+        System.out.println(txtPassword.getText());
+        System.out.println(txtPasswordAge.getText());
+        System.out.println(txtEmail.getText());
+        System.out.println(txtHint.getText());
+        System.out.println(txtLink.getText());
     }//GEN-LAST:event_butAddPasswordActionPerformed
 
     private void butBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butBackActionPerformed
