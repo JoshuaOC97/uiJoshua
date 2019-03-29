@@ -64,6 +64,11 @@ public class Registration extends javax.swing.JFrame {
         });
 
         jButton2.setText("Register");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,6 +136,14 @@ public class Registration extends javax.swing.JFrame {
         Login obj = new Login();
         obj.show();
     }//GEN-LAST:event_butBackActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.out.println(txtUsername.getText());
+        System.out.println(txtPassword.getText());
+        System.out.println(txtConfirmPassword.getText());
+        System.out.println(cbMemorableQuestion.getSelectedItem().toString());
+        System.out.println(txtMemorableAnswer.getText());
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

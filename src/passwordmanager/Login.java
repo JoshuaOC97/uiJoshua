@@ -61,6 +61,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         butSignIn.setText("Sign In");
+        butSignIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butSignInActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Forgot Password");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +145,15 @@ public class Login extends javax.swing.JFrame {
         Registration obj = new Registration();
         obj.show();
     }//GEN-LAST:event_butRegisterActionPerformed
+
+    private void butSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butSignInActionPerformed
+        System.out.println(txtUsername.getText());
+        System.out.println(txtPassword.getText());
+        System.out.println(cbMemorableQuestion.getSelectedItem().toString());
+        System.out.println(txtMemorableAnswer.getText());
+        viewPasswords obj = new viewPasswords();
+        obj.show();
+    }//GEN-LAST:event_butSignInActionPerformed
 
     /**
      * @param args the command line arguments
