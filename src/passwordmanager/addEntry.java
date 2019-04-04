@@ -172,11 +172,13 @@ public class addEntry extends javax.swing.JFrame {
         System.out.println(txtEmail.getText());
         System.out.println(txtHint.getText());
         System.out.println(txtLink.getText());
+        this.setVisible(false);
+        new viewPasswords().setVisible(true);
     }//GEN-LAST:event_butAddPasswordActionPerformed
 
     private void butBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butBackActionPerformed
-        viewPasswords obj = new viewPasswords();
-        obj.show();
+        this.setVisible(false);
+        new viewPasswords().setVisible(true);
     }//GEN-LAST:event_butBackActionPerformed
 
     /**

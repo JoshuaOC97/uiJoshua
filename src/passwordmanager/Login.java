@@ -39,7 +39,7 @@ public class Login extends javax.swing.JFrame {
         lblMemorableAnswer = new javax.swing.JLabel();
         butRegister = new javax.swing.JButton();
         butSignIn = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        butForgotPassword = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,10 +67,10 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Forgot Password");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        butForgotPassword.setText("Forgot Password");
+        butForgotPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                butForgotPasswordActionPerformed(evt);
             }
         });
 
@@ -103,7 +103,7 @@ public class Login extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(butSignIn)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3)))
+                                .addComponent(butForgotPassword)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(10, 10, 10))
         );
@@ -130,20 +130,20 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(butRegister)
                     .addComponent(butSignIn)
-                    .addComponent(jButton3))
+                    .addComponent(butForgotPassword))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void butForgotPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butForgotPasswordActionPerformed
+        
+    }//GEN-LAST:event_butForgotPasswordActionPerformed
 
     private void butRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butRegisterActionPerformed
-        Registration obj = new Registration();
-        obj.show();
+        this.setVisible(false);
+        new Registration().setVisible(true);
     }//GEN-LAST:event_butRegisterActionPerformed
 
     private void butSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butSignInActionPerformed
@@ -151,8 +151,8 @@ public class Login extends javax.swing.JFrame {
         System.out.println(txtPassword.getText());
         System.out.println(cbMemorableQuestion.getSelectedItem().toString());
         System.out.println(txtMemorableAnswer.getText());
-        viewPasswords obj = new viewPasswords();
-        obj.show();
+        this.setVisible(false);
+        new viewPasswords().setVisible(true);
     }//GEN-LAST:event_butSignInActionPerformed
 
     /**
@@ -191,10 +191,10 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton butForgotPassword;
     private javax.swing.JButton butRegister;
     private javax.swing.JButton butSignIn;
     private javax.swing.JComboBox<String> cbMemorableQuestion;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel lblMemorableAnswer;
     private javax.swing.JLabel lblMemorableQuestion;
     private javax.swing.JLabel lblPassword;

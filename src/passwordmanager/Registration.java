@@ -133,8 +133,8 @@ public class Registration extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void butBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butBackActionPerformed
-        Login obj = new Login();
-        obj.show();
+        this.setVisible(false);
+        new Login().setVisible(true);
     }//GEN-LAST:event_butBackActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -143,6 +143,8 @@ public class Registration extends javax.swing.JFrame {
         System.out.println(txtConfirmPassword.getText());
         System.out.println(cbMemorableQuestion.getSelectedItem().toString());
         System.out.println(txtMemorableAnswer.getText());
+        this.setVisible(false);
+        new Login().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

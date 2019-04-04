@@ -101,13 +101,13 @@ public class viewPasswords extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void butLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butLogOutActionPerformed
-        Login obj = new Login();
-        obj.show();
+        this.setVisible(false);
+        new Login().setVisible(true);
     }//GEN-LAST:event_butLogOutActionPerformed
 
     private void butAddPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butAddPasswordActionPerformed
-        addEntry obj = new addEntry();
-        obj.show();
+        this.setVisible(false);
+        new addEntry().setVisible(true);
     }//GEN-LAST:event_butAddPasswordActionPerformed
 
     /**
